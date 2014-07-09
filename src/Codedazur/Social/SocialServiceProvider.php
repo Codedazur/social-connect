@@ -1,6 +1,7 @@
 <?php namespace Codedazur\Social;
 
 use Illuminate\Support\ServiceProvider;
+use \Config;
 
 class SocialServiceProvider extends ServiceProvider {
 
@@ -19,7 +20,11 @@ class SocialServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		$this->package('codedazur/social');
-    include __DIR__ . '/../../routes.php';
+    
+    if (!Config::get('social::gigya.campaign_id')) {
+        include __DIR__ . '/../../routes.php';      
+    }   
+
 	}
 
 	/**
