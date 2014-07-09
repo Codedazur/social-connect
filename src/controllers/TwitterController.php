@@ -87,7 +87,6 @@ class TwitterController extends Controller
             $consumerSecret = Config::get('social::twitter.secret');
             $requestToken = Session::get('requestToken');
 
-
             $this->api = new Core(
                 $consumerKey,
                 $consumerSecret,

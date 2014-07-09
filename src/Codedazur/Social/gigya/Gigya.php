@@ -9,6 +9,7 @@ use /SigUtils;
  * @author rick@codedazur.nl
  * @copyright 2014 Code d'Azur
  */
+ 
 class Gigya
 {
 
