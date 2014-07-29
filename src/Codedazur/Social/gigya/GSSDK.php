@@ -67,7 +67,7 @@ class GSRequest
 
     static function __constructStatic()
     {
-        GSRequest::$cafile = realpath(app_path() . '/classes/gigya/cacert.pem');
+        GSRequest::$cafile = realpath(app_path() . './cacert.pem');
     }
 
     /**
