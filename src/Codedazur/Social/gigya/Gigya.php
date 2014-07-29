@@ -1,9 +1,9 @@
 <?php namespace Codedazur\Social\Gigya;
 
-include_once(app_path() . 'GSSDK.php');
+include_once('GSSDK.php');
 
-use /Config;
-use /SigUtils;
+use \Config;
+use \SigUtils;
 
 /**
  * @author rick@codedazur.nl
