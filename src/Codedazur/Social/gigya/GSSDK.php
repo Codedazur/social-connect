@@ -67,7 +67,7 @@ class GSRequest
 
     static function __constructStatic()
     {
-        GSRequest::$cafile = 'cacert.pem';
+        GSRequest::$cafile = base_path() . '/vendor/codedazur/social/src/Codedazur/Social/gigya/cacert.pem';
     }
 
     /**
