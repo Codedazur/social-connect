@@ -93,7 +93,7 @@ class Gigya
     {
         $apiKey = Config::get('social::gigya.api_key');
         $secretKey = Config::get('social::gigya.secret_key');
-        $apiDomain = Config::get('social::gigya.api_domain', 'us1.gigya.com');
+        $apiDomain = Config::get('social::gigya.api_domain', 'eu1.gigya.com');
 
         if (empty($apiKey) || empty($secretKey)) {
             throw new GigyaException('social::gigya.campaign_id, social::gigya.api_key and/or social::gigya.secret_key not defined in config', 1);
